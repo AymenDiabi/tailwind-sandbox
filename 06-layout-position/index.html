@@ -9,28 +9,63 @@
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative h-12 w-1/2 bg-red-300">
+      <p class="">Parent element</p>
+      <div class="absolute bottom-0 right-0 bg-red-600">
+        Absolute child
+      </div>
+    </div>
 
     <!-- Top left corner -->
-
+    <div class="relative h-32 w-32 bg-stone-200">
+      <div class="absolute top-0 left-0 h-16 w-16 bg-yellow-400"></div>
+    </div>
     <!-- Top right corner -->
-
+    <div class="relative h-32 w-32 bg-stone-200">
+      <div class="absolute w-16 h-16 right-0 top-0 bg-emerald-400"></div>
+    </div>
     <!-- Bottom left corner -->
-
+    <div class="relative h-32 w-32 bg-stone-300">
+      <div class="absolute bottom-0 left-0 h-16 w-16 bg-indigo-500"></div>
+    </div>
     <!-- Bottom right corner -->
-
+  <div class="relative h-32 w-32 bg-stone-300">
+    <div class="absolute bottom-0 right-0 w-16 h-16 bg-orange-500"></div>
+  </div>
     <!-- Span top edge -->
-
+  <div class="relative h-32 w-32 bg-stone-300">
+    <div class="absolute inset-x-0 h-16 bg-yellow-500"></div>
+  </div>
     <!-- Span left edge -->
-
+  <div class="relative h-32 w-32 bg-stone-200">
+    <div class="absolute inset-y-0 w-16 bg-emerald-400"></div>
+  </div>
     <!-- Span right edge -->
-
+  <div class="relative w-32 h-32 bg-stone-300">
+    <div class="absolute w-16 inset-y-0 right-0 bg-indigo-500"></div>
+  </div>
     <!-- Span bottom edge -->
-
+  <div class="relative w-32 h-32 bg-stone-300">
+    <div class="absolute h-16 bottom-0 inset-x-0 bg-orange-500"></div>
+  </div>
     <!-- Display Classes -->
-
+  <div class="block font-bold">This is CS50 block</div>
+  <div class="inline-block font-bold">This is CS50 inline-block</div>
+  <div class="inline font-bold ml-4">This is CS50 inline</div>
+  <div class="hidden font-bold">This is CS50 hidden</div>
     <!-- Z-Index -->
-
+  <div class="relative h-36">
+    <div class="absolute left-10 w-24 h-24 bg-blue-600 z-40">1</div>
+    <div class="absolute w-24 left-20 h-24 bg-blue-500 z-30">2</div>
+    <div class="absolute w-24 left-40 h-24 bg-blue-400 z-20">3</div>
+    <div class="absolute w-24 left-60 h-24 bg-blue-300 z-40">4</div>
+    <div class="absolute w-24 left-80 h-24 bg-blue-200 z-50">5</div>
+  </div>
     <!-- Floats -->
+    <div class="w-1/2">
+      <img class="h-48 w-48 float-right m-4" src="../assets/img/img1.jpg" alt="">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt expedita dolore dolorum odit quam, cum est quaerat in aliquam accusantium consequuntur quas iure nemo harum, tempore soluta ipsum quasi a?</p>
+    </div>
   </body>
 </html>
 
